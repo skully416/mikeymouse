@@ -39,6 +39,17 @@
     
     <!-- Custom CSS -->
     <style>
+      .ni {
+        margin-top: 65px;
+      }
+              /* Styling for the fixed header */
+        .fixed-top {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
+            z-index: 1030;
+        }
         /* Center vertically in Bootstrap navigation */
         .navbar-brand {
             display: flex;
@@ -81,10 +92,15 @@
         html {
             scroll-behavior: smooth;
         }
+      
+      .nav-item
+      .nav-link {
+        background-color: white;
+      }
     </style>
 </head>
 <body class="bg-gray-100">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <a class="navbar-brand" href="#home">
             <h1>Mikey Mouse Clubhouse</h1>
         </a>
@@ -110,7 +126,7 @@
     </nav>
   
     <!-- Bootstrap Hero Section -->
-    <header id="home" class="jumbotron jumbotron-fluid text-center bg-danger text-white">
+    <header id="home" class="ni jumbotron jumbotron-fluid text-center bg-danger text-white">
         <div class="container">
             <h2 class="display-4">Welcome to Mikey Mouse Clubhouse</h2>
             <p class="lead">Join the Adventure!</p>
@@ -230,5 +246,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+
+  </body>
 </html>
